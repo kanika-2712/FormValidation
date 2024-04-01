@@ -4,15 +4,32 @@
     box-sizing: border-box;
 }
 
+
+  
+
 .anton-regular {
     font-family: "Anton", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size:60px;
   }
+
+
+  /* ------------------------------------------- */
   a{
     text-decoration: none;
     color: white;
+  }
+  .containers{
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .card-img-top{
+    width: 250px;
+    height: 180px;
+  }
+  .btn2{
+    background-color:rgb(163, 188, 188) ;
   }
 .container{
     height: 100vh;
@@ -45,8 +62,47 @@
     left:100px;
     top:270px;
     width: 70%;
-
     color: azure;
-    
-    
+  
+}
+
+.form-body{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(143, 157, 144) ;
+}
+.container1{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    margin: 0 15px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.container1 header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color:#333;
+
+}
+.container1 header::before{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: blue;
+}
+
+.container1 form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #f2f2f2;
 }
