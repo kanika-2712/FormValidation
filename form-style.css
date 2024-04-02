@@ -93,9 +93,38 @@ form .fields .input-field{
     margin-top: 10px;
     text-align: center;
 }
+.resume{
+    margin-top: 40px;
+}
+.custom-file-input {
+    display: none; 
+}
+
+.custom-file-label {
+    background-color: #7e9eb1; 
+    color: #fff; 
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 
+.description{
+    margin: 15px;
+    font-size: 12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
+.submit.disabled{
+    background-color: #bbcfc3; 
+    color: #f0f0f0; 
+    cursor: not-allowed; 
+    opacity: 0.5; 
+  }
 
+.error-message{
+    color: red;
+    font-size: 10px;
+}
 
