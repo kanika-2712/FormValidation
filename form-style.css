@@ -21,7 +21,8 @@ body{
     width: 100%;
     border-radius: 6px;
     padding: 30px;
-    margin: 0 15px;
+    
+    margin: 40px;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
@@ -33,8 +34,9 @@ body{
 }
 
 .container form{
+   
     position: relative;
-    margin-top: 16px;
+   margin-top: 16px; 
     min-height: 490px;
     background-color: #fff;
     overflow: hidden;
@@ -101,7 +103,7 @@ form .fields .input-field{
 }
 
 .custom-file-label {
-    background-color: #7e9eb1; 
+    background-color: #195e85; 
     color: #fff; 
     padding: 8px 12px;
     border-radius: 4px;
@@ -110,6 +112,7 @@ form .fields .input-field{
 
 
 .description{
+   
     margin: 15px;
     font-size: 12px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -128,3 +131,11 @@ form .fields .input-field{
     font-size: 10px;
 }
 
+.asterick{
+    color:red;
+    margin-left: 3px;
+}
+a{
+    text-decoration: none;
+    color:#f0f0f0;
+}

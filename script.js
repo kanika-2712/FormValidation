@@ -4,7 +4,7 @@ function checkform(input) {
     var errorMessage = '';
 
     if (value === '') {
-        errorMessage = label + ' is required.';
+        errorMessage = label+ ' is required.';
     } else {
      
         switch (input.getAttribute('placeholder')) {
@@ -52,4 +52,19 @@ function validateMobileNumber(number) {
 }
 
 
+function checkFile(input) {
+    var fileInput = input.files[0];
+    var allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+    var errorSpan = document.getElementById('fileError');
+    var fileLabel = input.nextElementSibling;
 
+    if (fileInput) {
+        if (allowedTypes.includes(fileInput.type)) {
+            errorSpan.textContent = '';
+            fileLabel.textContent = fileInput.name; 
+        } else {
+            errorSpan.textContent = 'Supported formats are PDF and DOCX only.';
+            fileLabel.textContent = 'Upload Resume';
+        }
+    }
+}

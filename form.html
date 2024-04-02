@@ -11,32 +11,32 @@
 <body>
     <div class="container">
         <header>Registration</header>
-        <form action="#" name="theForm">
+        <form action="final.html" name="theForm" >
             <div class="form">
                 <div class="details personal">
                     <span class="title">Personal Details</span>
                     <div class="fields">
                         <div class="input-field">
-                            <label>Full Name</label>
+                            <label>Full Name<span class="asterick">*</span></label>
                             <input type="text" placeholder="Enter your name" onkeyup="checkform(this)" required>
                             <span class="error-message"></span>
                         </div>
                         <div class="input-field">
-                            <label>Date of Birth</label>
+                            <label>Date of Birth<span class="asterick">*</span></label>
                             <input type="date" placeholder="Enter birth date" onkeyup="checkform(this)" required>
                         </div>
                         <div class="input-field">
-                            <label>Email</label>
+                            <label>Email<span class="asterick">*</span></label>
                             <input type="email" placeholder="Enter your email" onkeyup="checkform(this)" required>
                             <span class="error-message"></span>
                         </div>
                         <div class="input-field">
-                            <label>Mobile Number</label>
+                            <label>Mobile Number<span class="asterick">*</span></label>
                             <input type="tel" placeholder="Enter mobile number" onkeyup="checkform(this)" required>
                             <span class="error-message"></span>
                         </div>
                         <div class="input-field">
-                            <label>Gender</label>
+                            <label>Gender<span class="asterick">*</span></label>
                             <select required>
                                 <option disabled selected>Select gender</option>
                                 <option>Male</option>
@@ -45,7 +45,7 @@
                             </select>
                         </div>
                         <div class="input-field">
-                            <label>Address</label>
+                            <label>Address<span class="asterick">*</span></label>
                             <input type="text" placeholder="Enter your address" onkeyup="checkform()" required>
                         </div>
                     </div>
@@ -56,27 +56,28 @@
                     <span class="title">Employment History</span>
                     <div class="fields">
                         <div class="input-field">
-                            <label>Years of Experience</label>
+                            <label>Years of Experience<span class="asterick">*</span></label>
                             <input type="number" placeholder="Enter years of experience" onkeyup="checkform()" required>
                         </div>
                         <div class="input-field">
-                            <label>Company Name</label>
+                            <label>Company Name<span class="asterick">*</span></label>
                             <input type="text" placeholder="Enter company name" onkeyup="checkform()" required>
                         </div>
                         <div class="input-field">
-                            <label>Job Title</label>
+                            <label>Job Title<span class="asterick">*</span></label>
                             <input type="text" placeholder="Enter job title" onkeyup="checkform()" required>
                         </div>
                         <div class="resume">
-                            <input type="file" id="fileInput" class="custom-file-input" accept=".pdf,.doc,.docx">
+                            <input type="file" id="fileInput" class="custom-file-input" accept=".pdf,.doc,.docx" onchange="checkFile(this)">
                             <label for="fileInput" class="custom-file-label">Upload Resume</label>
                             <p class="description">Supported format pdf,docx</p>
+                            <span id="fileError" class="error-message"></span>
                             
                     </div>
                 </div>
                <div class="contain">
-                <button class="submit" id="form-btn" disabled="disabled">
-                    <span class="btnText">Submit</span>
+                <button class="submit" id="form-btn" >
+                   <a href="final.html"><span class="btnText" >Submit</span></a>
                     
                 </button>
             </div>
